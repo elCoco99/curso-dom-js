@@ -1,5 +1,4 @@
-const titulo = document.getElementById('titulo')
-console.log('El tipo de dato del ById es ', typeof titulo)
+const topping = document.querySelector('.topping')
 
-const clase = document.getElementsByClassName('topping')
-console.log(clase[0])
+topping.style.backgroundColor = 'blue'
+topping.style.textTransform = 'uppercase'
