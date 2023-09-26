@@ -39,6 +39,12 @@ topping.classList.add('nueva-clase')
 console.log('se agregó nueva-clase al topping')
 console.log(document.getElementsByTagName('li'))
 
+ // verificar si existe una clase:
+ console.log('> verificar si existe clase nuva-clase')
+ console.log(topping.classList.contains('nueva-clase'))
+
+ // Eliminar una clase
+ topping.classList.remove('nueva-clase') 
 
 
 
