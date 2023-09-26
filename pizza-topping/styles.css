@@ -17,3 +17,23 @@ body {
 li {
   list-style-type: none;
 }
+
+/* --- Contenido ---*/ 
+
+#contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  min-width: 80vh;
+  max-width: 600px;
+  background-color: white;
+  border: 4px solid black;
+}
+
+h1 {
+  font-size: 3rem;
+  width: 100vh;
+  margin: 20px 10px;
+}
