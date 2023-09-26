@@ -1,20 +1,54 @@
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center, #444cf7, #e5e5f7), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 10px, transparent 20px, transparent 10px);
+  background-blend-mode: multiply;
   height: 100vh;
-  text-align: center;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 40%;
+  min-width: 200px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 20%;
+  background-color: #080808;
+  opacity: 0.8;
+  background: linear-gradient(135deg, #33333655 25%, transparent 25%) -11px 0/ 22px 22px, linear-gradient(225deg, #333336 25%, transparent 25%) -11px 0/ 22px 22px, linear-gradient(315deg, #33333655 25%, transparent 25%) 0px 0/ 22px 22px, linear-gradient(45deg, #333336 25%, #080808 25%) 0px 0/ 22px 22px;
 }
 
 a, a:visited {
   text-decoration: none;
+}
+
+li {
+  text-align: left;
+  margin: 10px 5px
+}
+
+h1, h2 {
+  margin: 20px;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 20px
 }
