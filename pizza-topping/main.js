@@ -4,6 +4,7 @@ const topping = document.querySelector('.topping')
 const topList = document.getElementById('toppings')
 const link = document.getElementsByTagName('a')
 
+
 /* Agregar estilos desde CSS */ 
 
 topping.style.backgroundColor = 'blue'    // modifica el fondo
@@ -96,8 +97,42 @@ console.log(topList.nextSibling) // hermano siguiente (nodo)
 console.log('> Hermano siguiente de un elemento (elemento)') 
 console.log(topList.nextElementSibling) // hermano siguiente (elemento)
 
+/* EVENTOS */
+
+// forma estatica usando el atributo onclick="clics()" en cada elemento HTML
+
+/* 
+function clics (top)  {
+  console.log(top)
+}  */
+
+// forma dinamica en JS .addEventListener()
+
+// obtenemos contexto del elemento target -- element Target
+const tops = document.getElementsByClassName('topping')
 
 
+// funcion -- eventHandler
+/* 
+
+function clics (e)  {
+  console.log(e.target.innerText) // e: obtiene el evento - .target: obtiene el elemento html // .innerText: retorna el texto interno del elemento
+  
+} 
+
+// asociacion -- eventListener
+for (const toppings of tops) {
+  toppings.addEventListener('click', clics)
+}
+*/
+
+//resumiendo todo en una sola funcion flecha dentro del for
+
+for (let top of tops) {
+  top.addEventListener('click', (e) => {
+    console.log(e.target.innerText)
+  })
+}
 
 
 
