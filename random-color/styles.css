@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* Contenedor */
@@ -35,6 +36,15 @@ body {
   text-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
 }
 
+main {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #color {
   font-size: 70px;
   font-weight: bold;
@@ -42,20 +52,20 @@ body {
 
 button {
   font-size: 30px;
-  color: #ccf;
+  color: black;
   text-shadow: 2px 2px 1px rgba(0,0,0,0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
   border-radius: 20px;
-  background-color: #008CBA;
+  background-color: #332e33;
   margin: 15px;
   padding: 10px 30px;
-  border: 2px solid #008CBA;;
+  border: 2px solid #008CBA;
   user-select: none;
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #05455A;
+  background-color: #54375f;
 
 }
 
@@ -67,6 +77,7 @@ a:visited {
   color: white;
 }
 
-
-
-
+footer {
+  color: #ebffff;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 10px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+}

@@ -21,6 +21,11 @@ body {
 
 }
 
+main {
+  width: 200px;
+  height: 100px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -32,7 +37,6 @@ body {
   text-align: center;
   border: 2px solid white;
   border-radius: 5%;
-  background-color: #030303;
   background-color: #030303;
   opacity: 1;
   background: linear-gradient(135deg, #332e3355 25%, transparent 25%) -15px 0/ 30px 30px, linear-gradient(225deg, #332e33 25%, transparent 25%) -15px 0/ 30px 30px, linear-gradient(315deg, #332e3355 25%, transparent 25%) 0px 0/ 30px 30px, linear-gradient(45deg, #332e33 25%, #030303 25%) 0px 0/ 30px 30px;
@@ -66,6 +70,3 @@ h1, h2 {
   text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 10px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
   }
 
-footer {
-  margin-top: 20px
-}
