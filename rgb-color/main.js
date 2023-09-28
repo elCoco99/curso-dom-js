@@ -28,14 +28,14 @@ function actColor(r, g, b) {
 
 /* listener */
 
-inputRojo.addEventListener('change', () => {
+inputRojo.addEventListener('change', () => { // ejemplo de usar el contexto con una funcion anonima para obtener el dato
   rojo = inputRojo.value
   console.log("r: " + rojo)
   rtext.innerText = rojo
   actColor(rojo, verde, azul)
 })
 
-inputVerde.addEventListener('change', (e) => {
+inputVerde.addEventListener('change', (e) => { //ejemplo de usar el evento para obtener el dato del cambio
   verde = e.target.value
   console.log("g: " + verde)
   gtext.innerText = verde
