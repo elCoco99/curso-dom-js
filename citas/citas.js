@@ -1,4 +1,4 @@
-let citas = [
+export const citas = [
   {
     'autor': 'Albert Einstein',
     'texto': 'No poseo talentos especiales. Solo soy apasionadamente curioso.'

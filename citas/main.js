@@ -1,5 +1,5 @@
 /* Contextos */
-
+import {citas} from "./citas.js"
 //boton
 let botonElem = document.querySelector('button')
 
@@ -11,9 +11,16 @@ let aut = document.getElementById('autor')
 
 //generar número aleatorio
 
-function randomNumber (min, max) {
-
-  return Math.floor(Math.random()* (max - min) + min)
+function randomEntero (min, max) {
+  return Math.floor(Math.random() * (max - min) + min)
 }
 
-console.log(rando)
+function cambiarCita () {
+  let randomIndex = randomEntero(0, citas.length)
+  cita.innerText = `"${citas[randomIndex].texto}"`
+  aut.innerText = `"${citas[randomIndex].autor}"`
+}
+
+cambiarCita ()
+
+botonElem.addEventListener('click', cambiarCita)
